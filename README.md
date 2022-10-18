@@ -6,7 +6,7 @@
 👉 <b>(UBUNTU 18)</b>
 
 ```
-apt install wget -y; bash <(wget -qO- https://github.com/JeanRocha91x/Pweb-Swit-T-Plus/raw/main/install/ubuinst.sh)
+apt install wget -y; bash <(wget -qO- https://raw.githubusercontent.com/CoutySSH/SSH-WEB/main/ubuinst.sh)
 ```
 </br>
 
@@ -17,7 +17,7 @@ apt install wget -y; bash <(wget -qO- https://github.com/JeanRocha91x/Pweb-Swit-
 
 # 𓊈𒆜 SINCRONIZAR NA VPS SSH! 𒆜𓊉
 ```
-apt install wget -y; bash <(wget -qO- https://github.com/JeanRocha91x/Pweb-Swit-T-Plus/raw/main/install/sincpainel.sh)
+apt install wget -y; bash <(wget -qO- https://raw.githubusercontent.com/CoutySSH/SSH-WEB/main/sincpainel.sh)
 ```
 
 # 𓊈𒆜 SCRIPT COM CHECKUSER CONECTA4G! 𒆜𓊉
@@ -62,13 +62,7 @@ em breve
 
 ![Screenshot_8](https://user-images.githubusercontent.com/105602625/190263464-7be50eb5-aed8-47d5-9f29-233d769ae8ac.jpg)
 
-# 𓊈𒆜 CRÉDITOS: 𒆜𓊉
-```
-@crazy_vpn
-@nandoslayer
-@swittecnologia
-@Davidsdy
-```
+
 
 # 𓊈𒆜 VPN MONEY: 𒆜𓊉
-👉 https://kiwify.app/NKl55g5.
+👉 

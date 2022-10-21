@@ -1,4 +1,4 @@
-#  𓊈𒆜 PAINEL VIP SWIT-T-PLUS 𒆜𓊉
+#  𓊈𒆜 PAINEL SSH WEB 𒆜𓊉
 
 ⚠ <b>SISTEMA SUPORTADO:</b>
 </br>
@@ -12,7 +12,8 @@ apt install wget -y; bash <(wget -qO- https://raw.githubusercontent.com/CoutySSH
 
 # 𓊈𒆜 CHAVE DE INSTALAÇÃO! 𒆜𓊉
 ```
-@swittplus
+CoutySSH
+SSH WEB
 ```
 
 # 𓊈𒆜 SINCRONIZAR NA VPS SSH! 𒆜𓊉

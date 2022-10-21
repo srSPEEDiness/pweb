@@ -62,7 +62,7 @@ function deletatudo(){
             <div class="card">
                 <div class="card-header">
                     <h4 class="card-title">Hospedar Arquivos</h4>
-					<a class="text-bold-800 grey darken-2" href="../apps" target="_self">CLICK AQUI PARA IR PARA A LOJA DE ARQUIVOS</a></span>
+					<a class="text-bold-800 grey darken-2" href="../appss" target="_self">CLICK AQUI PARA IR PARA A LOJA DE ARQUIVOS</a></span>
                 </div>
                 <div class="card-body">
                     <form action="pages/download/enviandoarquivo.php" enctype="multipart/form-data" method="POST" role="form">

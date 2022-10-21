@@ -62,7 +62,7 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`id_administrador`, `login`, `senha`, `nome`, `email`, `celular`, `accessKEY`, `site`, `textocon`, `textorev`) VALUES
-(1, 'admin', 'admin', 'Administrador', 'meuemail@gmail.com', '11999999999', NULL, 'GESTOR-SSH', 'Abra o app que você instalou e selecione a operadora, digite o usuário e a senha, ligue o dados móveis e desligue Wi-fi, clique em Conectar. Deve aparecer *Conectado*. 🚀', 'Seja bem vindo revenda e tenha sucesso nas *vendas*. 🚀');
+(1, 'admin', 'admin', 'Administrador', 'meuemail@gmail.com', '11999999999', NULL, 'SSH WEB', 'Abra o app que você instalou e selecione a operadora, digite o usuário e a senha, ligue o dados móveis e desligue Wi-fi, clique em Conectar. Deve aparecer *Conectado*. 🚀', 'Seja bem vindo revenda e tenha sucesso nas *vendas*. 🚀');
 
 -- --------------------------------------------------------
 

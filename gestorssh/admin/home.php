@@ -437,6 +437,8 @@ $all_chamados += $SQLchamadoscli->rowCount();
                         </li>
                          <li><a href="?page=apps"><i data-feather='gitlab'></i><span class="menu-item" data-i18n="Apps">Gerenciar Apps</span></a>
                         </li>
+                         <li><a href="?page=download/downloads"><i data-feather='file'></i><span class="menu-item" data-i18n="Arquivos">Arquivos</span></a>
+                        </li>
                          <li><a href="?page=perso"><i data-feather='star'></i><span class="menu-item" data-i18n="Apps">Personalizar</span></a>
                         </li>
 						<li><a href="?page=admin/dados"><i data-feather='edit'></i><span class="menu-item" data-i18n="Minhas Informações">Meus Dados</span></a>
@@ -445,8 +447,6 @@ $all_chamados += $SQLchamadoscli->rowCount();
                         </li>
                         <li><a href="?page=notificacoes/notificar"><i data-feather='message-square'></i><span class="menu-item" data-i18n="Notificações">Notificações</span></a>
                         </li>
-                        <!--<li><a href="?page=download/downloads"><i data-feather='file'></i><span class="menu-item" data-i18n="Arquivos">Arquivos</span></a>
-                        </li>-->
                         <li><a href="?page=email/enviaremail"><i data-feather='mail'></i><span class="menu-item" data-i18n="Email">Email</span></a>
                         </li>
                     </ul>

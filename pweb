@@ -1,5 +1,5 @@
 #!/bin/bash
-[[ $(awk -F" " '{print $2}' /usr/lib/telegram) == "@Couty_SSH" ]] && {
+#[[ $(awk -F" " '{print $2}' /usr/lib/telegram) == "@Couty_SSH" ]] && {
 ### CORES DA BARRA
 msg() {
   BRAN='\033[1;37m' && VERMELHO='\e[31m' && VERDE='\e[32m' && AMARELO='\e[33m'

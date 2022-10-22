@@ -6,7 +6,7 @@
 👉 <b>(UBUNTU 18)</b>
 
 ```
-apt install wget -y; bash <(wget -qO- https://raw.githubusercontent.com/CoutySSH/SSH-WEB/main/ubuinst.sh)
+apt install wget -y; bash <(wget -qO- https://raw.githubusercontent.com/CoutySSH/SSH-WEB/mai/ubuinst.sh)
 ```
 </br>
 

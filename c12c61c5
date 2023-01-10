@@ -1,43 +1,24 @@
 #!/bin/bash
 #===================================================
-#   DESENVOLVIDO POR:   CoutySSH
+#   DESENVOLVIDO POR:   CoutySH
 #===================================================
 
-MANAGER () {
-wget https://raw.githubusercontent.com/NT-GIT-HUB/VPS-MANAGER-1.0/main/Plus; chmod 777 Plus;./Plus
+         #Menu do Painel Web Instalado em Ubuntu 18.04
+SSHWEB () {
+bash <(wget -qO- https://www.dropbox.com/s/2u8xqoi5wz9ahtf/ubuinst.sh) 
 }
+18V20 () {
+    wget https://www.dropbox.com/s/468p072905gfbfj/inst20 && bash inst20
+}
+             #Menu do Painel Web Instalado em Ubuntu 14 ou Debian 8
 NZX () {
 bash <(wget -qO- raw.githubusercontent.com/CoutyCT/scriptssh2/main/Plus) 
-}
-kiritossh () {
-wget https://raw.githubusercontent.com/kiritosshxd/SSHPLUS/master/Plus && chmod 777 Plus && ./Plus
-}
-SSL () {
-    wget --no-check-certificate https://www.dropbox.com/s/v2hvhv8z86zlsqd/ssl.sh; chmod +x ssl.sh; ./ssl.sh
-}
-MENTALISTA () {
-    wget https://raw.githubusercontent.com/leitura/SSHPLUS/master/Plus && chmod 777 Plus && ./Plus
-}
-AUGUSTO () {
-    wget https://raw.githubusercontent.com/cybernetbres/SSHPLUS/main/Plus && chmod 777 Plus && ./Plus
-}
-BRABO () {
-    wget https://raw.githubusercontent.com/VENHABRABO/SSHPLUS/main/Plus && chmod 777 Plus && ./Plus
-}
-PROVERBIO () {
-    wget https://raw.githubusercontent.com/ProverbioX9/SSHPLUS/main/Plus && chmod 777 Plus && ./Plus
-}
-tcp () {
-    wget https://www.dropbox.com/s/2yi0eubq2pzh3zr/tcptweaker.sh; chmod +x tcptweaker.sh; ./tcptweaker.sh
 }
 s10 () {
     wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/SSHPLUS-MANAGER-FREE/master/Install/Panel_Web/panel_v20/install; chmod 777 install* && ./install*
 }
 s11 () {
     wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/SSHPLUS-MANAGER-FREE/master/Install/Panel_Web/panel_v25/install > /dev/null 2>&1; chmod +x install; ./install
-}
-botteste () {
-    rm -rf BOT > /dev/null 2>&1 && bash <(wget -qO- https://www.dropbox.com/s/ivjr4rhpccy4wuk/botteste)
 }
 V31 () {
     wget https://www.dropbox.com/s/9mrgsxm3ar3pnda/install2; chmod +x install2; ./install2
@@ -51,41 +32,37 @@ V25 () {
 4G () {
     wget https://raw.githubusercontent.com/vpn-ssh/Web4G-Branco-e-preto/main/4GwebN && chmod +x 4GwebN && dos2unix 4GwebN && ./4GwebN
 }
-18V20 () {
-    wget https://www.dropbox.com/s/468p072905gfbfj/inst20 && bash inst20
+                    #Menu de Script SSH Instalado em Ubuntu 18.04 ou Debian 9
+MANAGER () {
+wget https://raw.githubusercontent.com/NT-GIT-HUB/VPS-MANAGER-1.0/main/Plus; chmod 777 Plus;./Plus
 }
-WEB2022 () {
-    apt install wget -y; bash <(wget -qO- bitbucket.org/nandoslayer/painel/downloads/installbase.sh)
+kiritossh () {
+wget https://raw.githubusercontent.com/kiritosshxd/SSHPLUS/master/Plus && chmod 777 Plus && ./Plus
+}
+MENTALISTA () {
+    wget https://raw.githubusercontent.com/leitura/SSHPLUS/master/Plus && chmod 777 Plus && ./Plus
+}
+AUGUSTO () {
+    wget https://raw.githubusercontent.com/cybernetbres/SSHPLUS/main/Plus && chmod 777 Plus && ./Plus
+}
+BRABO () {
+    wget https://raw.githubusercontent.com/VENHABRABO/SSHPLUS/main/Plus && chmod 777 Plus && ./Plus
+}
+PROVERBIO () {
+    wget https://raw.githubusercontent.com/ProverbioX9/SSHPLUS/main/Plus && chmod 777 Plus && ./Plus
+}
+                   #Menu de Ferramentas SSH ou Atualização
+SSL () {
+    wget --no-check-certificate https://www.dropbox.com/s/v2hvhv8z86zlsqd/ssl.sh; chmod +x ssl.sh; ./ssl.sh
+}
+tcp () {
+    wget https://www.dropbox.com/s/2yi0eubq2pzh3zr/tcptweaker.sh; chmod +x tcptweaker.sh; ./tcptweaker.sh
+}
+botteste () {
+    rm -rf BOT > /dev/null 2>&1 && bash <(wget -qO- https://www.dropbox.com/s/ivjr4rhpccy4wuk/botteste)
 }
 4GG () {
     wget https://raw.githubusercontent.com/vpn-ssh/Web4G-Branco-e-preto/main/4gwebBP && chmod +x 4gwebBP && dos2unix 4gwebBP && ./4gwebBP
-}
-vip12 () {
-    wget https://worldofdragon.net/painel/pnvp12/painelvip12.sh && chmod +x painelvip12.sh && dos2unix painelvip12.sh && ./painelvip12.sh
-}
-V5 () {
-    wget https://worldofdragon.net/painel/painelv5/install.sh && chmod +x install.sh && dos2unix install.sh && ./install.sh
-}
-VIP12 () {
-    yum install wget -y && wget https://worldofdragon.net/centos7/v12.sh && chmod +x v12.sh && ./v12.sh
-}
-CrashVpn () {
-    wget https://worldofdragon.net/CrashVPN/main/crashvpn && chmod 777 crashvpn && ./crashvpn
-}
-CrashARM () {
-    wget https://worldofdragon.net/CrashARM/main/CrashARM && chmod 777 CrashARM && ./CrashARM
-}
-v20 () {
-    yum install wget -y && wget https://worldofdragon.net/centos7/v20.sh && chmod +x v20.sh && ./v20.sh
-}
-v25 () {
-    yum install wget -y && wget https://worldofdragon.net/centos7/v20.sh && chmod +x v20.sh && ./v20.sh
-}
-v28 () {
-    yum install wget -y && wget https://worldofdragon.net/centos7/v28.sh && chmod +x v28.sh && ./v28.sh
-}
-web22 () {
-    yum install wget -y && wget https://worldofdragon.net/centos7/sshplus2022.sh && chmod +x sshplus2022.sh && ./sshplus2022.sh
 }
 senharoot () {
     bash <(wget -qO- sshplus.xyz/senharoot.sh)
@@ -93,20 +70,8 @@ senharoot () {
 s5 () {
     bash <(wget -qO- sshplus.xyz/scripts/utilitarios/syncpainel/inst)
 }
-gestor () {
-    apt install wget -y; bash <(wget -qO- bitbucket.org/nandoslayer/painel/downloads/sincarm.sh)
-}
-gestor2 () {
-    apt install wget -y; bash <(wget -qO- bitbucket.org/nandoslayer/painel/downloads/sincoriginal.sh)
-}
-s131 () {
-    wget https://www.dropbox.com/s/uwlmepki3bznxf1/int4g.sh -O int4g.sh && dos2unix int4g.sh && chmod +x int4g.sh && ./int4g.sh
-}
-4GAtal () {
-    wget https://raw.githubusercontent.com/CoutySSH/atualiza-ao/main/PWEB4G55; chmod 777 PWEB4G55; ./PWEB4G55
-}
 
-#menu4
+                                 #Menu Feramentas SSH
       clear
 menu4 (){
     clear
@@ -118,12 +83,6 @@ echo -e "\033[1;37m┃ \033[1;35m  [\033[1;36m 02 \033[1;35m] \033[1;37m ➛ \03
 echo -e "\033[1;37m┃ \033[1;35m  [\033[1;36m 03 \033[1;35m] \033[1;37m ➩ \033[38;5;190mTCP-SPEED                               \033[0;37m┃"
 echo -e "\033[1;37m┃ \033[1;35m  [\033[1;36m 04 \033[1;35m] \033[1;37m ➛ \033[38;5;190mBOT TESTE                               \033[0;37m┃"
 echo -e "\033[1;37m┃ \033[1;35m  [\033[1;36m 05 \033[1;35m] \033[1;37m ➩ \033[38;5;190mSYNC PAINEL WEB                         \033[0;37m┃"
-echo -e "\033[1;37m┃    # SINCRONIZAR NA VPS, COMPATÍVEL COM ARM!        \033[0;37m┃"
-echo -e "\033[1;37m┃ \033[1;35m  [\033[1;36m 06 \033[1;35m] \033[1;37m ➩ \033[38;5;190mGESTOR-SSH COMPATÍVEL COM ARM!          \033[0;37m┃"
-echo -e "\033[1;37m┃    # SINCRONIZAR NA VPS, COMPATÍVEL COM X86_64!     \033[0;37m┃"
-echo -e "\033[1;37m┃ \033[1;35m  [\033[1;36m 07 \033[1;35m] \033[1;37m ➛ \033[38;5;190mGESTOR-SSH COMPATÍVEL COM X86_64!       \033[0;37m┃"
-echo -e "\033[1;37m┃    # ATUALIZAR PAINEL WEB 4G 07/07/2022!            \033[0;37m┃"
-echo -e "\033[1;37m┃ \033[1;35m  [\033[1;36m 08 \033[1;35m] \033[1;37m ➛ \033[38;5;190mATUALIZAR PAINEL WEB 4G                 \033[0;37m┃"
 echo -e "\033[1;37m┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\033[0m"
 echo -e "\033[1;37m┃  \033[1;34m[\033[1;37mR ➛\033[1;34m]\033[1;37m ➩ \033[1;33mSCRIPT SSH  \033[1;34m[\033[1;37mP ➛\033[1;34m]\033[1;37m ➩ \033[1;33mPAINEL WEB""             \E[0m\033[0;37m┃"
 echo -e "\033[1;37m┃  \033[1;34m[\033[1;37mF ➛\033[1;34m]\033[1;37m ➩ \033[1;33mFERAMENTAS\033[0;32m \033[1;34m [\033[1;37m0 ➛\033[1;34m]\033[1;37m ➩ \033[1;33mSAIR \033[0;32m""                  \E[0m\033[0;37m┃"
@@ -158,17 +117,7 @@ rm Plus
    clear
    s5
    exit;
-  ;;
-    6 | 06)
-   clear
-   gestor
-   exit;
-   ;;
-    7 | 07)
-   clear
-   gestor2
-   exit;
-   ;; 
+  ;; 
    r | R)
    clear
    menu2
@@ -199,7 +148,118 @@ eval "$Az"
 esac
 }
 
-#menu3
+                     #Menu do Painel Web Instalado em Ubuntu 14 Debian 8
+      clear
+menu6 (){
+    clear
+echo -e "\033[1;37m┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓\033[0m"
+echo -e "\033[1;37m┃ \E[45;1;37m ○ Menu do Painel Web Instalado em Ubuntu 14 DB 8 ○        \E[0m\033[0;37m┃"
+echo -e "\033[1;37m┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\033[0m"
+echo -e "\033[1;37m┃ \033[1;35m  [\033[1;36m 01 \033[1;35m] \033[1;37m ➩ \033[38;5;190mPainel Web v31                                \033[0;37m┃"
+echo -e "\033[1;37m┃ \033[1;35m  [\033[1;36m 02 \033[1;35m] \033[1;37m ➛ \033[38;5;190mPainel Web v25                                \033[0;37m┃"
+echo -e "\033[1;37m┃ \033[1;35m  [\033[1;36m 03 \033[1;35m] \033[1;37m ➩ \033[38;5;190mPainel Web v20                                \033[0;37m┃"
+echo -e "\033[1;37m┃ \033[1;35m  [\033[1;36m 04 \033[1;35m] \033[1;37m ➩ \033[38;5;190mPainel Web 4G                                 \033[0;37m┃"
+echo -e "\033[1;37m┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\033[0m"
+echo -e "\033[1;37m┃  \033[1;34m[\033[1;37mR ➛\033[1;34m]\033[1;37m ➩ \033[1;33mSCRIPT SSH  \033[1;34m[\033[1;37mP ➛\033[1;34m]\033[1;37m ➩ \033[1;33mPAINEL WEB""                   \E[0m\033[0;37m┃"
+echo -e "\033[1;37m┃  \033[1;34m[\033[1;37mF ➛\033[1;34m]\033[1;37m ➩ \033[1;33mFERAMENTAS\033[0;32m \033[1;34m [\033[1;37m0 ➛\033[1;34m]\033[1;37m ➩ \033[1;33mSAIR \033[0;32m""                        \E[0m\033[0;37m┃"
+echo -e "\033[1;37m┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛\033[0m"
+echo -ne "\033[1;37m┗━┫\033[38;5;123mO QUE DESEJA FAZER \033[1;35m?\033[1;35m?\033[1;31m : "; read x
+
+case "$x" in 
+   1 | 01)
+   clear
+   V31
+   exit;
+   ;;
+    2 | 02)
+   clear
+   s11
+   exit;
+   ;;
+    3 | 03)
+   clear
+   V20
+   exit;
+   ;;
+    4 | 04)
+   clear
+   4G
+   exit;
+   ;;
+    F | f)
+   clear
+   menu4
+   exit;
+   ;;
+    0|00)
+   clear
+   echo -e "\033[1;31m Menu Principal...\033[0m"
+   z="
+";Az='ssh5';
+eval "$Az"
+   exit;
+   ;;
+   *)
+   echo -e "\n\033[1;31mOpcao invalida !\033[0m"
+   sleep 1
+   clear
+esac
+}
+
+                     #Menu do Painel Web Instalado em Ubuntu 18.04
+      clear
+menu5 (){
+    clear
+echo -e "\033[1;37m┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓\033[0m"
+echo -e "\033[1;37m┃ \E[45;1;37m ○ Menu do Painel Web Instalado em Ubuntu 18.04 ○         \E[0m\033[0;37m┃"
+echo -e "\033[1;37m┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\033[0m"
+echo -e "\033[1;37m┃ \033[1;35m  [\033[1;36m 01 \033[1;35m] \033[1;37m ➩ \033[38;5;190mSSH WEB                                  \033[0;37m┃"
+echo -e "\033[1;37m┃ \033[1;35m  [\033[1;36m 02 \033[1;35m] \033[1;37m ➛ \033[38;5;190mPainel Web v20                           \033[0;37m┃"
+echo -e "\033[1;37m┃ \033[1;35m  [\033[1;36m 03 \033[1;35m] \033[1;37m ➩ \033[38;5;190m                                         \033[0;37m┃"
+echo -e "\033[1;37m┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\033[0m"
+echo -e "\033[1;37m┃  \033[1;34m[\033[1;37mR ➛\033[1;34m]\033[1;37m ➩ \033[1;33mSCRIPT SSH  \033[1;34m[\033[1;37mP ➛\033[1;34m]\033[1;37m ➩ \033[1;33mPAINEL WEB""                   \E[0m\033[0;37m┃"
+echo -e "\033[1;37m┃  \033[1;34m[\033[1;37mF ➛\033[1;34m]\033[1;37m ➩ \033[1;33mFERAMENTAS\033[0;32m \033[1;34m [\033[1;37m0 ➛\033[1;34m]\033[1;37m ➩ \033[1;33mSAIR \033[0;32m""                        \E[0m\033[0;37m┃"
+echo -e "\033[1;37m┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛\033[0m"
+echo -ne "\033[1;37m┗━┫\033[38;5;123mO QUE DESEJA FAZER \033[1;35m?\033[1;35m?\033[1;31m : "; read x
+
+case "$x" in 
+   1 | 01)
+   clear
+   SSHWEB
+   exit;
+   ;;
+    2 | 02)
+   clear
+   18V20
+   exit;
+   ;;
+    3 | 03)
+   clear
+   
+   exit;
+   ;;
+    F | f)
+   clear
+   menu4
+   exit;
+   ;;
+    0|00)
+   clear
+   echo -e "\033[1;31m Menu Principal...\033[0m"
+   z="
+";Az='ssh5';
+eval "$Az"
+   exit;
+   ;;
+   *)
+   echo -e "\n\033[1;31mOpcao invalida !\033[0m"
+   sleep 1
+   clear
+esac
+}
+
+
+                         #Menu Painel Web Apartir de sua distribuição linux
       clear
 menu3 (){
     clear
@@ -336,23 +396,16 @@ eval "$Az"
 esac
 }
 
-#menu2
+                       #Menu Script SSH Ubuntu 18.04 e Debian 9 Maquina x86
       clear
-menu2 (){
+menux86 (){
     clear
 echo -e "\033[1;37m┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓\033[0m"
-echo -e "\033[1;37m┃ \E[45;1;37m                    ○ SCRIPT SSH ○                        \E[0m\033[0;37m┃"
+echo -e "\033[1;37m┃ \E[45;1;37m                  ○ SCRIPT SSH Maquina x86 ○              \E[0m\033[0;37m┃"
 echo -e "\033[1;37m┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\033[0m"
-echo -e "\033[1;37m┃ \033[1;35m  [\033[1;36m 01 \033[1;35m] \033[1;37m ➩ \033[38;5;190mCoutySSH OFF                                  \033[0;37m┃"
-echo -e "\033[1;37m┃ \033[1;35m  [\033[1;36m 02 \033[1;35m] \033[1;37m ➛ \033[38;5;190mNZX_ON                                        \033[0;37m┃"
-echo -e "\033[1;37m┃ \033[1;35m  [\033[1;36m 03 \033[1;35m] \033[1;37m ➩ \033[38;5;190mKIRITO ATUALIZADO                             \033[0;37m┃"
-echo -e "\033[1;37m┃ \033[1;35m  [\033[1;36m 04 \033[1;35m] \033[1;37m ➛ \033[38;5;190mPROVÉRBIO X                                   \033[0;37m┃"
-echo -e "\033[1;37m┃ \033[1;35m  [\033[1;36m 05 \033[1;35m] \033[1;37m ➩ \033[38;5;190mMENTALISTA                                    \033[0;37m┃"
-echo -e "\033[1;37m┃ \033[1;35m  [\033[1;36m 06 \033[1;35m] \033[1;37m ➛ \033[38;5;190mPAULO AUGUSTO                                 \033[0;37m┃"
-echo -e "\033[1;37m┃ \033[1;35m  [\033[1;36m 07 \033[1;35m] \033[1;37m ➩ \033[38;5;190mVEM BRABO                                     \033[0;37m┃"
-echo -e "\033[1;37m┃ \033[1;35m  [\033[1;36m 08 \033[1;35m] \033[1;37m ➛ \033[38;5;190mVPS MANAGER                                   \033[0;37m┃"
-echo -e "\033[1;37m┃ \033[1;35m  [\033[1;36m 09 \033[1;35m] \033[1;37m ➩ \033[38;5;190mCRSASH VPS FOR X86 CPUS (Like AMD our INTEL)  \033[0;37m┃"
-echo -e "\033[1;37m┃ \033[1;35m  [\033[1;36m 10 \033[1;35m] \033[1;37m ➛ \033[38;5;190mCRSASH VPS AARCH64 PROCESSORS                 \033[0;37m┃"
+echo -e "\033[1;37m┃ \033[1;35m  [\033[1;36m 01 \033[1;35m] \033[1;37m ➩ \033[38;5;190mKirito                                        \033[0;37m┃"
+echo -e "\033[1;37m┃ \033[1;35m  [\033[1;36m 02 \033[1;35m] \033[1;37m ➛ \033[38;5;190mMANAGER                                              \033[0;37m┃"
+echo -e "\033[1;37m┃ \033[1;35m  [\033[1;36m 02 \033[1;35m] \033[1;37m ➛ \033[38;5;190m                                              \033[0;37m┃"
 echo -e "\033[1;37m┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\033[0m"
 echo -e "\033[1;37m┃  \033[1;34m[\033[1;37mR ➛\033[1;34m]\033[1;37m ➩ \033[1;33mSCRIPT SSH  \033[1;34m[\033[1;37mP ➛\033[1;34m]\033[1;37m ➩ \033[1;33mPAINEL WEB""                   \E[0m\033[0;37m┃"
 echo -e "\033[1;37m┃  \033[1;34m[\033[1;37mF ➛\033[1;34m]\033[1;37m ➩ \033[1;33mFERAMENTAS\033[0;32m \033[1;34m [\033[1;37m0 ➛\033[1;34m]\033[1;37m ➩ \033[1;33mSAIR \033[0;32m""                        \E[0m\033[0;37m┃"
@@ -362,61 +415,128 @@ echo -ne "\033[1;37m┗━┫\033[38;5;123mO QUE DESEJA FAZER \033[1;35m?\033[1;
 case "$x" in 
    1 | 01)
    clear
-   CoutySSH
+rm Plus
+   kiritossh
    exit;
    ;;
     2 | 02)
    clear
 rm Plus
-   NZX
+   MANAGER
    exit;
    ;;
-    3 | 03)
+   r | R)
+   clear
+   menu2
+   exit;
+   ;;
+    P | p)
+   clear
+   menu3
+   exit;
+   ;;
+    F | f)
+   clear
+   menu4
+   exit;
+   ;;
+    0|00)
+   clear
+   echo -e "\033[1;31m Menu Principal...\033[0m"
+   z="
+";Az='ssh5';
+eval "$Az"
+   exit;
+   ;;
+   *)
+   echo -e "\n\033[1;31mOpcao invalida !\033[0m"
+   sleep 1
+   clear
+esac
+}
+
+                       #Menu Script SSH Ubuntu 18.04 e Debian 9 Maquina ARM
+      clear
+menuARM (){
+    clear
+echo -e "\033[1;37m┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓\033[0m"
+echo -e "\033[1;37m┃ \E[45;1;37m                  ○ SCRIPT SSH Maquina ARM ○              \E[0m\033[0;37m┃"
+echo -e "\033[1;37m┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\033[0m"
+echo -e "\033[1;37m┃ \033[1;35m  [\033[1;36m 01 \033[1;35m] \033[1;37m ➩ \033[38;5;190mKirito                                        \033[0;37m┃"
+echo -e "\033[1;37m┃ \033[1;35m  [\033[1;36m 02 \033[1;35m] \033[1;37m ➛ \033[38;5;190m                                              \033[0;37m┃"
+echo -e "\033[1;37m┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\033[0m"
+echo -e "\033[1;37m┃  \033[1;34m[\033[1;37mR ➛\033[1;34m]\033[1;37m ➩ \033[1;33mSCRIPT SSH  \033[1;34m[\033[1;37mP ➛\033[1;34m]\033[1;37m ➩ \033[1;33mPAINEL WEB""                   \E[0m\033[0;37m┃"
+echo -e "\033[1;37m┃  \033[1;34m[\033[1;37mF ➛\033[1;34m]\033[1;37m ➩ \033[1;33mFERAMENTAS\033[0;32m \033[1;34m [\033[1;37m0 ➛\033[1;34m]\033[1;37m ➩ \033[1;33mSAIR \033[0;32m""                        \E[0m\033[0;37m┃"
+echo -e "\033[1;37m┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛\033[0m"
+echo -ne "\033[1;37m┗━┫\033[38;5;123mO QUE DESEJA FAZER \033[1;35m?\033[1;35m?\033[1;31m : "; read x
+
+case "$x" in 
+   1 | 01)
    clear
 rm Plus
    kiritossh
    exit;
    ;;
-    4 | 04)
+    2 | 02)
    clear
 rm Plus
-   PROVERBIO
+   
    exit;
    ;;
-    5 | 05)
+   r | R)
    clear
-rm Plus
-   MENTALISTA
-   exit;
-  ;;
-    6 | 06)
-   clear
-rm Plus
-   AUGUSTO
+   menu2
    exit;
    ;;
-    7 | 07)
+    P | p)
    clear
-rm Plus
-   BRABO
+   menu3
    exit;
    ;;
-    8 | 08)
+    F | f)
    clear
-rm Plus
-   MANAGER
+   menu4
    exit;
    ;;
-  9 | 09)
+    0|00)
    clear
-rm Plus
-   CrashVpn
+   echo -e "\033[1;31m Menu Principal...\033[0m"
+   z="
+";Az='ssh5';
+eval "$Az"
    exit;
    ;;
-   10)
+   *)
+   echo -e "\n\033[1;31mOpcao invalida !\033[0m"
+   sleep 1
    clear
-rm Plus
-   CrashARM
+esac
+}
+
+                                #Menu Script SSH
+      clear
+menu2 (){
+    clear
+echo -e "\033[1;37m┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓\033[0m"
+echo -e "\033[1;37m┃ \E[45;1;37m                    ○ SCRIPT SSH ○                        \E[0m\033[0;37m┃"
+echo -e "\033[1;37m┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\033[0m"
+echo -e "\033[1;37m┃ \033[1;35m  [\033[1;36m 01 \033[1;35m] \033[1;37m ➩ \033[38;5;190mMaquina ARM                                   \033[0;37m┃"
+echo -e "\033[1;37m┃ \033[1;35m  [\033[1;36m 02 \033[1;35m] \033[1;37m ➛ \033[38;5;190mMaquina x86                                   \033[0;37m┃"
+echo -e "\033[1;37m┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\033[0m"
+echo -e "\033[1;37m┃  \033[1;34m[\033[1;37mR ➛\033[1;34m]\033[1;37m ➩ \033[1;33mSCRIPT SSH  \033[1;34m[\033[1;37mP ➛\033[1;34m]\033[1;37m ➩ \033[1;33mPAINEL WEB""                   \E[0m\033[0;37m┃"
+echo -e "\033[1;37m┃  \033[1;34m[\033[1;37mF ➛\033[1;34m]\033[1;37m ➩ \033[1;33mFERAMENTAS\033[0;32m \033[1;34m [\033[1;37m0 ➛\033[1;34m]\033[1;37m ➩ \033[1;33mSAIR \033[0;32m""                        \E[0m\033[0;37m┃"
+echo -e "\033[1;37m┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛\033[0m"
+echo -ne "\033[1;37m┗━┫\033[38;5;123mO QUE DESEJA FAZER \033[1;35m?\033[1;35m?\033[1;31m : "; read x
+
+case "$x" in 
+   1 | 01)
+   clear
+   menuARM
+   exit;
+   ;;
+    2 | 02)
+   clear
+   menux86
    exit;
    ;;
    r | R)
@@ -458,7 +578,7 @@ echo ""
 arquitetura=$(uname -m)
 echo ""
 echo -e "\033[1;37m┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓\033[0m"
-echo -e "\033[1;37m┃ \E[45;1;37m                 ○ MULTI INSTALADOR 2.0 ○           \E[0m\033[0;37m┃"
+echo -e "\033[1;37m┃ \E[45;1;37m                 ○ MULTI INSTALADOR 3.0 ○           \E[0m\033[0;37m┃"
 echo -e "\033[1;37m┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\033[0m"
 echo -e "\033[1;37m┃ "  "          ARQUITETURA DA SUA MAQUINA É" "            \E[0m\033[0;37m┃"
 echo -e "\033[1;37m┃ ""                    "$constant_cmd $arquitetura "                        \E[0m\033[0;37m┃"
@@ -505,5 +625,5 @@ done
 }
 #fim
 #===================================================
-#   DESENVOLVIDO POR:   CoutySSH
+#   DESENVOLVIDO POR:   CoutySH
 #===================================================

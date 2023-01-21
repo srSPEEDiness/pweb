@@ -1,4 +1,12 @@
-#  𓊈𒆜 PAINEL SSH WEB 𒆜𓊉
+#  𓊈𒆜 PAINEL WEB PW 𒆜𓊉
+
+#  𓊈𒆜 VPS PARA FAZER INSTALAÇÂO 𒆜𓊉
+
+✅ AviraHost
+   https://bit.ly/AviraHosti
+
+✅ HostMF
+   https://bit.ly/HOSTMF
 
 ⚠ <b>SISTEMA SUPORTADO:</b>
 </br>
@@ -17,7 +25,7 @@ CoutySSH
 
 # 𓊈𒆜 SINCRONIZAR NA VPS SSH! 𒆜𓊉
 ```
-apt install wget -y; bash <(wget -qO- https://raw.githubusercontent.com/CoutySSH/SSH-WEB/sincpainel.sh)
+apt install wget -y; bash <(wget -qO- https://raw.githubusercont.com/CoutySSH/SSH-WEB/sincpainel.sh)
 ```
 
 # 𓊈𒆜 SCRIPT COM CHECKUSER CONECTA4G! 𒆜𓊉
@@ -75,3 +83,5 @@ Creditos
 @nandoslayer
 @swittecnologia
 @Davidsdy
+@Couty_SSH
+@smigolvip

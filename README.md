@@ -66,3 +66,12 @@ em breve
 
 # 𓊈𒆜 VPN MONEY: 𒆜𓊉
 👉 
+
+
+
+
+Creditos
+@crazy_vpn
+@nandoslayer
+@swittecnologia
+@Davidsdy

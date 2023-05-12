@@ -60,23 +60,6 @@ em breve
 (quando alterar o NOME DA LOGO no painel pweb, Todos os texto EMPRESA será trocado também.)
 ```
 
-# 𓊈𒆜 IMAGENS: 𒆜𓊉
-
-![Painel Admin VPN Money](https://user-images.githubusercontent.com/105602625/190263468-56d64724-1b12-4ce3-9ecb-11df0131fc07.jpg)
-
-![Painel Revenda VPN Money](https://user-images.githubusercontent.com/105602625/190263459-5ce4defd-6b65-468f-824e-50826154174a.jpg)
-
-![Screenshot_9](https://user-images.githubusercontent.com/105602625/190263465-93cbd881-a166-412f-99bb-1c613c78b7af.jpg)
-
-![Screenshot_8](https://user-images.githubusercontent.com/105602625/190263464-7be50eb5-aed8-47d5-9f29-233d769ae8ac.jpg)
-
-
-
-# 𓊈𒆜 VPN MONEY: 𒆜𓊉
-👉 
-
-
-
 
 Creditos
 @crazy_vpn

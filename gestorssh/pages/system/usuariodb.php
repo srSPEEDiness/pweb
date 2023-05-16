@@ -1,1 +1,0 @@
-<?php $usuariodb = "root"; ?>

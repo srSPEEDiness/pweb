@@ -183,23 +183,6 @@ $all_chamados += $SQLchamadoscli->rowCount();
 
 </head>
 <!-- END: Head-->
-<?php
-error_reporting(0);
-if (file_exists('../pages/system/tokeA.php')) {
-	
-} else {
-	echo ('<script>window.location.href = "../install/install.php";</script>');
-}
-include('../admin/pages/admin/define.php');
-if (!file_exists('../tr.php')) {
-	echo ('<script>window.location.href = "../index.php";</script>');
-}
-include('../tr.php');
-	session_start();
-		if (isset($_POST['login']) && isset($_POST['senha'])) {
-			include '../login.php';
-		}
-?>
 <!-- BEGIN: Body-->
 
 <body class="vertical-layout vertical-menu-modern  navbar-floating footer-static  " data-open="click" data-menu="vertical-menu-modern" data-col="">

@@ -1,5 +1,9 @@
 #  𓊈𒆜 PAINEL WEB PW 𒆜𓊉
 
+✅ MODULO PIX
+✅ OS CLIENTES PODE RENOVAR AUTOMATICAMENTE 
+
+
 #  𓊈𒆜 VPS PARA FAZER INSTALAÇÂO 𒆜𓊉
 
 ✅ AviraHost

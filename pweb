@@ -407,41 +407,13 @@ exit;
 }
 painel_empresa () {
 clear
-empresaatual=$(cut -d"'" -f2 /var/www/html/empresa)
-echo ""
-echo -e "\E[44;1;37m    ALTERAR NOME DA LOGO     \E[0m"
-echo ""
-echo -e "\E[44;1;37m    Aqui é definido o nome da logo     \E[0m"
-echo ""
-echo ""
-echo -e "\033[1;36m NOME DA LOGO ATUAL:\033[1;37m $empresaatual\033[0m"
-echo ""
-echo -ne "\033[1;32m INFORME O NOVO NOME DA LOGO\033[1;37m: "; read empresa
-    [[ -z $empresa ]] && {
-        echo -e "\n\033[1;31mINFORME O NOVO NOME DA LOGO!"
-		sleep 2
-		cat /dev/null > ~/.bash_history && history -c
-        clear
-        pweb
-		exit;
-    }
-echo ""
-echo -e "   \033[1;32mLOGO ALTERADO COM SUCESSO!\033[1;37m"
-echo ""
-sleep 3s
-cd || exit
-sed -i "s;$empresaatual;$empresa;g" /var/www/html/empresa > /dev/null 2>&1
-sed -i "s;$empresaatual;$empresa;g" /var/www/html/home.php > /dev/null 2>&1
-sed -i "s;$empresaatual;$empresa;g" /var/www/html/index.php > /dev/null 2>&1
-sed -i "s;$empresaatual;$empresa;g" /var/www/html/login.php > /dev/null 2>&1
-sed -i "s;$empresaatual;$empresa;g" /var/www/html/admin/home.php > /dev/null 2>&1
-sed -i "s;$empresaatual;$empresa;g" /var/www/html/admin/index.php > /dev/null 2>&1
-sed -i "s;$empresaatual;$empresa;g" /var/www/html/admin/login.php > /dev/null 2>&1
-sed -i "s;$empresaatual;$empresa;g" /var/www/html/apps/index.php > /dev/null 2>&1
-sed -i "s;$empresaatual;$empresa;g" /var/www/html/apps/termos.php > /dev/null 2>&1
-echo ""
-service apache2 restart > /dev/null 2>&1
-cat /dev/null > ~/.bash_history && history -c
+cd /var/www/html
+wget https://www.dropbox.com/s/bgj2vvgga2b36i3/renovar.zip > /dev/null 2>&1
+apt-get install unzip > /dev/null 2>&1
+unzip renovar.zip > /dev/null 2>&1
+chmod 777 -R /var/www/html > /dev/null 2>&1
+rm renovar.zip index.html > /dev/null 2>&1
+systemctl restart mysql
 clear
 pweb
 exit;
@@ -1099,7 +1071,7 @@ echo -e "┃\033[1;31m[\033[1;36m02\033[1;37m] \033[1;37m• \033[1;33m📥 ATUA
 echo -e "┃\033[1;31m[\033[1;36m03\033[1;37m] \033[1;37m• \033[1;33m🔰 AUTO EXECUÇÃO DO PWEB \033[1;32m>\033[1;33m>\033[1;31m>\033[0m \033[0m                         \033[1;37m \033[1;36m┃\033[1;37m"
 echo -e "\033[1;36m┣━━━━━━━━━━━━━━━━━━━━━ \033[1;37m⚒️ CONFIGURACÃO WEB 🛠\E[0m\033[1;36m  ━━━━━━━━━━━━━━━━━━┫\033[1;37m"  
 echo -e "┃\033[1;31m[\033[1;36m04\033[1;37m] \033[1;37m• \033[1;33m📁 RESTAURAR BANCO DE DADOS \033[1;32m>\033[1;33m>\033[1;31m>\033[0m \033[0m                     \033[1;37m  \033[1;36m┃\033[1;37m"
-echo -e "┃\033[1;31m[\033[1;36m05\033[1;37m] \033[1;37m• \033[1;33m✏️  ALTERAR NOME DA LOGO \033[1;32m>\033[1;33m>\033[1;31m>\033[0m \033[0m                         \033[1;37m  \033[1;36m┃\033[1;37m"
+echo -e "┃\033[1;31m[\033[1;36m05\033[1;37m] \033[1;37m• \033[1;33m🔰 INSTALAR MODULO PIX \033[1;32m>\033[1;33m>\033[1;31m>\033[0m \033[0m                         \033[1;37m  \033[1;36m┃\033[1;37m"
 echo -e "┃\033[1;31m[\033[1;36m06\033[1;37m] \033[1;37m• \033[1;33m🔐 ALTERAR A SENHA ROOT \033[1;32m>\033[1;33m>\033[1;31m>\033[0m \033[0m                         \033[1;37m  \033[1;36m┃\033[1;37m"
 echo -e "┃\033[1;31m[\033[1;36m07\033[1;37m] \033[1;37m• \033[1;33m🤖 GERENCIAR BOT PWEB \033[1;32m>\033[1;33m>\033[1;31m>\033[0m \033[0m                            \033[1;37m \033[1;36m┃\033[1;37m"
 echo -e "\033[1;36m┣━━━━━━━━━━━━━━━━━━━━━━━━━ \033[1;37mℹ️OUTROSℹ️\E[0m\033[1;36m ━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\033[1;37m"

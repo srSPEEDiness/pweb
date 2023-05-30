@@ -60,8 +60,8 @@ criarteste() {
         --text "VC JÁ CRIOU SEU TESTE HOJE!"
       return 0
     }
-    usuario=$(echo teste$(( RANDOM% + 250 )))
-    senha=$((RANDOM% + 99999))
+    usuario=$(echo Cyber$(( RANDOM% + 250 )))
+    senha=$((RANDOM% + 9999))
     limite='1'
     tempo='6'
     tuserdate=$(date '+%C%y/%m/%d' -d " +1 days")
@@ -98,8 +98,8 @@ fi
 # - funcao criar ssh pro
 criar_ssh_premium() {
     idtlg=$1
-    usuario=$(echo U$((RANDOM % +99999)))
-    senha=$(echo S$((RANDOM % +99999)))
+    usuario=$(echo U$((RANDOM % +999)))
+    senha=$(echo S$((RANDOM % +9999)))
     limite=$2
     tuserdate=$(date '+%C%y/%m/%d' -d " +30 days")
     if sshpass -p "$senha_server" ssh -o ConnectTimeout=2 -o StrictHostKeyChecking=no root@$ip_server echo "ok" 1>/dev/null 2>/dev/null; then

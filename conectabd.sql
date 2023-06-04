@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
--- https://www.phpmyadmin.net/
+-- version 4.4.15.10
+-- https://www.phpmyadmin.net
 --
 -- Host: localhost
--- Tempo de geração: 29/06/2022 às 20:22
--- Versão do servidor: 10.1.48-MariaDB-0ubuntu0.18.04.1
--- Versão do PHP: 8.1.7
+-- Generation Time: 27-Jul-2022 às 01:39
+-- Versão do servidor: 5.5.68-MariaDB
+-- PHP Version: 5.4.16
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -18,198 +17,247 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Banco de dados: `sshplus`
+-- Database: `conectanovo`
 --
 
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `configs`
+-- Estrutura da tabela `configs`
 --
 
-CREATE TABLE `configs` (
+CREATE TABLE IF NOT EXISTS `configs` (
   `id` int(11) NOT NULL,
-  `nome` varchar(60) NOT NULL,
-  `valor` varbinary(300) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+  `nome` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `valor` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Despejando dados para a tabela `configs`
+-- Extraindo dados da tabela `configs`
 --
 
 INSERT INTO `configs` (`id`, `nome`, `valor`) VALUES
-(1, 'versao', 0x312e302e31),
-(2, 'notas', 0xf09f918b20415455414c495a41c387c3834f20444953504f4ec38d56454c2120f09f918b),
-(3, 'sms', 0x687474703a2f2f646f6d696e696f2e78797a2f736d732e706870),
-(4, 'update', 0x687474703a2f2f646f6d696e696f2e78797a2f7570646174652e706870),
-(5, 'email', 0x6d6575656d61696c40676d61696c2e636f6d),
-(6, 'contato', 0x68747470733a2f2f742e6d652f74656c656772616d),
-(7, 'termos', 0x687474703a2f2f646f6d696e696f2e78797a2f617070732f7465726d6f732e706870),
-(8, 'checkuser', 0x74727565),
-(9, 'msg', 0xf09f9a8020434c4951554520454d20415455414c495a415220f09f9a80),
-(10, 'nsms', 0x3031);
+(10, 'msg_id', '04'),
+(11, 'sesexp', '30'),
+(12, 'logo', 'https://i.ibb.co/q1LnDVT/logo.png'),
+(13, 'largura', ''),
+(14, 'altura', ''),
+(15, 'link', 'http://davidsdy.xyz'),
+(16, 'titulo', 'Painel Conecta 4G');
 
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `payloads`
+-- Estrutura da tabela `configuracoes`
 --
 
-CREATE TABLE `payloads` (
+CREATE TABLE IF NOT EXISTS `configuracoes` (
   `id` int(11) NOT NULL,
-  `Name` varbinary(100) NOT NULL,
-  `FLAG` varchar(100) NOT NULL,
-  `Payload` varchar(200) NOT NULL,
-  `SNI` varchar(100) NOT NULL,
-  `TlsIP` varchar(100) NOT NULL,
-  `ProxyIP` varchar(100) NOT NULL,
-  `ProxyPort` varchar(10) NOT NULL,
-  `Info` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Despejando dados para a tabela `payloads`
---
-
-INSERT INTO `payloads` (`id`, `Name`, `FLAG`, `Payload`, `SNI`, `TlsIP`, `ProxyIP`, `ProxyPort`, `Info`) VALUES
-(1, 0xf09f929c205649564f20434c4f554420f09f929c, 'vivo', 'GET wss://api.bitso.com/ HTTP/1.1[crlf]Host: [app_host][crlf]Upgrade: Websocket[crlf]Connection: Keep-Alive[crlf]Connection: Keep-Alive[crlf][crlf]', 'api.bitso.com', '172.64.195.2', '', '443', 'Tlsws'),
-(2, 0xf09f929c205649564f204a4f474f5320f09f929c, 'vivo', 'GET wss://support.pokemon.com/ HTTP/1.1[crlf]Host: [app_host][crlf]Upgrade: Websocket[crlf]Connection: Keep-Alive[crlf]Connection: Keep-Alive[crlf][crlf]', 'support.pokemon.com', '172.64.130.2', '', '443', 'Tlsws'),
-(3, 0xf09f92992054494d20434c4f554420f09f9299, 'tim', 'GET wss://static.r4you.co  HTTP/1.1[crlf]Host: [app_host][crlf]Upgrade: websocket[crlf][crlf]', 'static.r4you.co', 'static.r4you.co', '', '443', 'Tlsws'),
-(4, 0xf09f92992054494d205241494f20f09f9299, 'tim', 'GET wss://static.r4you.co  HTTP/1.1[crlf]Host: [app_host][crlf]Upgrade: websocket[crlf][crlf]', 'static.r4you.co', '104.26.5.175', '', '443', 'Tlsws'),
-(5, 0xe29da4efb88f20434c41524f20535045454420e29da4efb88f, 'claro', 'GET wss://ct.livestream.com/ HTTP/1.1[crlf]Host: [app_host][crlf]Upgrade: websocket[crlf][crlf]', 'ct.livestream.com', 'ct.livestream.com', '', '443', 'Tlsws'),
-(6, 0xe29da4efb88f20434c41524f20464c495820e29da4efb88f, 'claro', 'GET wss://lp.livestream.com/ HTTP/1.1[crlf]Host: [app_host][crlf]Upgrade: websocket[crlf][crlf]', 'lp.livestream.com', 'lp.livestream.com', '', '443', 'Tlsws'),
-(7, 0xf09f929b204f49204641535420f09f929b, 'oi', 'GET ws://www.hbogo.com.br HTTP/1.1\nHost: [app_host]\nUpgrade: ws\n\n', 'www.hbogo.com.br', 'www.hbogo.com.br', '', '', 'Tlsws'),
-(8, 0xf09f929b204f4920574f524c4420f09f929b, 'oi', 'GET ws://www.hbogo.com.br HTTP/1.1\nHost: [app_host]\nUpgrade: ws\n\n', 'www.hbogo.com.br', '104.16.53.91', '', '', 'Tlsws');
+  `id_owner` int(11) NOT NULL,
+  `versao` int(11) NOT NULL DEFAULT '2',
+  `notas` text COLLATE utf8mb4_unicode_ci,
+  `sms` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `att` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `email` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `contato` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `termos` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `checkuser` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `mensagem` text COLLATE utf8mb4_unicode_ci,
+  `att_msg` int(11) NOT NULL DEFAULT '1'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `portas`
+-- Estrutura da tabela `mensagens`
 --
 
-CREATE TABLE `portas` (
+CREATE TABLE IF NOT EXISTS `mensagens` (
   `id` int(11) NOT NULL,
-  `Porta` varchar(10) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Despejando dados para a tabela `portas`
---
-
-INSERT INTO `portas` (`id`, `Porta`) VALUES
-(1, '7100'),
-(2, '7200'),
-(3, '7300');
+  `id_owner` int(11) NOT NULL,
+  `msg` mediumtext COLLATE utf8mb4_unicode_ci,
+  `att` int(11) DEFAULT '2'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `servidores`
+-- Estrutura da tabela `payloads`
 --
 
-CREATE TABLE `servidores` (
+CREATE TABLE IF NOT EXISTS `payloads` (
   `id` int(11) NOT NULL,
-  `Name` varbinary(50) NOT NULL,
-  `TYPE` varchar(20) NOT NULL DEFAULT 'premium',
-  `FLAG` varchar(20) NOT NULL DEFAULT 'br.png',
-  `ServerIP` varchar(100) NOT NULL,
-  `CheckUser` varchar(200) NOT NULL,
-  `ServerPort` varchar(5) NOT NULL DEFAULT '22',
-  `SSLPort` varchar(5) NOT NULL DEFAULT '443',
-  `USER` varchar(20) NOT NULL,
-  `PASS` varchar(20) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Despejando dados para a tabela `servidores`
---
-
-INSERT INTO `servidores` (`id`, `Name`, `TYPE`, `FLAG`, `ServerIP`, `CheckUser`, `ServerPort`, `SSLPort`, `USER`, `PASS`) VALUES
-(1, 0xe29aa1204d4555205345525649444f5220303120e29aa1, 'premium', 'br.png', 'meudominio.xyz', 'http://meudominio.xyz:8080/checkUser', '22', '443', '', ''),
-(2, 0xe29aa1204d4555205345525649444f5220303220e29aa1, 'premium', 'br.png', 'meudominio.xyz', 'http://meudominio.xyz:8080/checkUser', '22', '443', '', '');
+  `id_owner` int(11) NOT NULL,
+  `Name` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `FLAG` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `Payload` text COLLATE utf8mb4_unicode_ci,
+  `SNI` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `TlsIP` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `ProxyIP` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `ProxyPort` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `Info` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `usuarios`
+-- Estrutura da tabela `portas`
 --
 
-CREATE TABLE `usuarios` (
+CREATE TABLE IF NOT EXISTS `portas` (
   `id` int(11) NOT NULL,
-  `nome` varchar(50) NOT NULL,
-  `login` varchar(25) NOT NULL,
-  `senha` varchar(32) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `id_owner` int(11) NOT NULL,
+  `Porta` varchar(10) COLLATE utf8mb4_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
 
 --
--- Índices para tabelas despejadas
+-- Estrutura da tabela `servidores`
+--
+
+CREATE TABLE IF NOT EXISTS `servidores` (
+  `id` int(11) NOT NULL,
+  `id_owner` int(11) NOT NULL,
+  `Name` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `TYPE` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'premium',
+  `FLAG` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'br.png',
+  `ServerIP` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `CheckUser` varchar(200) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `ServerPort` int(11) DEFAULT '22',
+  `SSLPort` int(11) DEFAULT NULL,
+  `USER` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `PASS` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `sessao`
+--
+
+CREATE TABLE IF NOT EXISTS `sessao` (
+  `id` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `uid` varchar(30) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `expira` int(100) NOT NULL DEFAULT '0'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `usuarios`
+--
+
+CREATE TABLE IF NOT EXISTS `usuarios` (
+  `id` int(11) NOT NULL,
+  `nome` mediumtext COLLATE utf8mb4_unicode_ci NOT NULL,
+  `login` varchar(25) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `senha` varchar(32) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `nivel` int(11) NOT NULL DEFAULT '1',
+  `banido` int(11) NOT NULL DEFAULT '0',
+  `limite_pay` int(11) NOT NULL DEFAULT '4',
+  `limite_ser` int(11) NOT NULL DEFAULT '15',
+  `pasta_att` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Extraindo dados da tabela `usuarios`
+--
+
+INSERT INTO `usuarios` (`id`, `nome`, `login`, `senha`, `nivel`, `banido`, `limite_pay`, `limite_ser`, `pasta_att`) VALUES
+(1, 'Davidsdy', 'admin', '21232f297a57a5a743894a0e4a801fc3', 3, 0, 4, 15, 'admin');
+
+--
+-- Indexes for dumped tables
 --
 
 --
--- Índices de tabela `configs`
+-- Indexes for table `configs`
 --
 ALTER TABLE `configs`
   ADD PRIMARY KEY (`id`);
 
 --
--- Índices de tabela `payloads`
+-- Indexes for table `configuracoes`
+--
+ALTER TABLE `configuracoes`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `mensagens`
+--
+ALTER TABLE `mensagens`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `payloads`
 --
 ALTER TABLE `payloads`
   ADD PRIMARY KEY (`id`);
 
 --
--- Índices de tabela `portas`
+-- Indexes for table `portas`
 --
 ALTER TABLE `portas`
   ADD PRIMARY KEY (`id`);
 
 --
--- Índices de tabela `servidores`
+-- Indexes for table `servidores`
 --
 ALTER TABLE `servidores`
   ADD PRIMARY KEY (`id`);
 
 --
--- Índices de tabela `usuarios`
+-- Indexes for table `sessao`
+--
+ALTER TABLE `sessao`
+  ADD UNIQUE KEY `id` (`id`,`uid`);
+
+--
+-- Indexes for table `usuarios`
 --
 ALTER TABLE `usuarios`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT para tabelas despejadas
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT de tabela `configs`
+-- AUTO_INCREMENT for table `configs`
 --
 ALTER TABLE `configs`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
-
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=17;
 --
--- AUTO_INCREMENT de tabela `payloads`
+-- AUTO_INCREMENT for table `configuracoes`
 --
-ALTER TABLE `payloads`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
-
---
--- AUTO_INCREMENT de tabela `portas`
---
-ALTER TABLE `portas`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
-
---
--- AUTO_INCREMENT de tabela `servidores`
---
-ALTER TABLE `servidores`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-
---
--- AUTO_INCREMENT de tabela `usuarios`
---
-ALTER TABLE `usuarios`
+ALTER TABLE `configuracoes`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-COMMIT;
-
+--
+-- AUTO_INCREMENT for table `mensagens`
+--
+ALTER TABLE `mensagens`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `payloads`
+--
+ALTER TABLE `payloads`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `portas`
+--
+ALTER TABLE `portas`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `servidores`
+--
+ALTER TABLE `servidores`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `usuarios`
+--
+ALTER TABLE `usuarios`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=11;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
